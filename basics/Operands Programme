@@ -1,0 +1,27 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a: ");
+        int a = input.nextInt();
+        System.out.print("Enter b: ");
+        int b = input.nextInt();
+        System.out.print("Choose an operand from +,-,*,/ ");
+        char operand = input.next().charAt(0);
+        if(operand == '+'){
+            System.out.println(a+b);
+        }
+        else if(operand == '-'){
+            System.out.println(a-b);
+        }
+        else if(operand == '*'){
+            System.out.println(a*b);
+        }
+        else if(operand == '/'){
+            System.out.println((float)(a)/b);
+        }
+        else{
+            System.out.println("Choose correct operand");
+        }
+    }
+}
