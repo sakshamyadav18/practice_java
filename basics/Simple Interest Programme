@@ -1,0 +1,13 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter Principle: ");
+        float Principle = input.nextFloat();
+        System.out.print("Enter Time: "); //Time in years
+        float Time = input.nextFloat();
+        System.out.print("Rate Of Interest: ");
+        float ROI = input.nextFloat();
+        System.out.print("Simple Interest is: " + ((Principle*Time*ROI)/100));
+    }
+}
