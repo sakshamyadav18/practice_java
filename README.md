@@ -1,3 +1,3 @@
-# practice c
+# practice Java
 <br>
-Basic c programmes
+Basic Java programmes
