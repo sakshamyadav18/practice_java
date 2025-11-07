@@ -1,0 +1,9 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter Rupees: ");
+        float Rupees = input.nextFloat();
+        System.out.println("In USD: $" + Rupees*(1/88.68));
+    }
+}
