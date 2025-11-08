@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter Alphabet: ");
+        char Alphabet = input.next().charAt(0);
+        if(Alphabet>=65 && Alphabet<=90){
+            System.out.println("Uppercase Letter");
+        }
+        else{
+            System.out.println("Lowercase Letter");
+        }
+    }
+}
