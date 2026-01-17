@@ -1,0 +1,12 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter length: ");
+        float length = input.nextFloat();
+        System.out.print("Enter breadth: ");
+        float breadth = input.nextFloat();
+        double Area = (length*breadth);
+        System.out.print("Area of rectangle is: " + Area);
+    }
+}
