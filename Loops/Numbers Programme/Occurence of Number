@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        System.out.print("Enter the no.");
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+        int q = n;
+        System.out.print("Enter the no. in which occurence has to be found");
+        int a = scn.nextInt();
+        int rem;
+        int count = 0;
+        while(n>0){
+            rem = n%10;
+            if(rem==a){
+               count++; 
+            }
+            n = n/10;
+        }
+        System.out.print("Occurence of " + a + " in number " + q + " is " + count + " times");
+    }
+}
