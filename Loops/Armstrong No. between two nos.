@@ -1,0 +1,32 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        System.out.print("Enter two numbers ");
+        Scanner input = new Scanner(System.in);
+        int a = input.nextInt();
+        int b = input.nextInt();
+        int rem;
+        for (int i =a; i<=b; i++){
+            int k = i;
+            int q = k;
+            int r = q;
+            int count = 0;
+            int sum = 0;
+            while(r>0){
+                r = r/10;
+                count++;
+            }
+            for(int j=1; j<=count; j++){
+                rem = k%10;
+                k = k/10;
+                sum = sum + (int)Math.pow(rem, count);
+            }
+            if(q==sum){
+                System.out.println(q + " Armstrong no.");
+            }
+            else{
+                System.out.println(q + " Not Armstrong No.");
+            }
+        }
+    }
+}
