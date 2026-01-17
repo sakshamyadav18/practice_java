@@ -1,0 +1,12 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        System.out.print("Enter Base of triangle: ");
+        Scanner input = new Scanner(System.in);
+        float base = input.nextFloat();
+        System.out.print("Enter height of triangle: ");
+        float height = input.nextFloat();
+        double Area = 0.5*base*height;
+        System.out.print("Area of triangle is: " + Area);
+    }
+}
