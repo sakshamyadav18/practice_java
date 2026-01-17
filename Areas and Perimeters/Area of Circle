@@ -1,0 +1,11 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        System.out.print("Enter radius: ");
+        Scanner input = new Scanner(System.in);
+        float r = input.nextFloat();
+        double pi = 3.142;
+        double Area = pi*(float)Math.pow(r, 2);
+        System.out.print("Area of circle is: " + Area);
+    }
+}
