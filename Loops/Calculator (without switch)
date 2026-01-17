@@ -1,0 +1,47 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        int ans;
+        while(true){
+            System.out.print("Enter the operator from + - * / % ");
+            char operator = input.next().trim().charAt(0);
+            if(operator == '+' || operator == '-' || operator == '*' || operator== '/' || operator == '%'){
+                System.out.print("Enter two numbers ");
+                int a = input.nextInt();
+                int b = input.nextInt();
+                if(operator == '+'){
+                    ans = a+b;
+                    System.out.println(ans);
+                }
+                if(operator == '-'){
+                    ans = a-b;
+                    System.out.println(ans);
+                }
+                if(operator == '*'){
+                    ans = a*b;
+                    System.out.println(ans);
+                }
+                if(operator == '/'){
+                    if(b!=0){
+                        ans = a/b;
+                        System.out.println(ans);
+                    }
+                    else{
+                        System.out.println("Math error");
+                    }
+                }
+                if(operator == '%'){
+                    ans = a%b;
+                    System.out.println(ans);
+                }
+            }
+            else if(operator =='x' || operator == 'X'){
+                break;
+            }
+            else{
+                System.out.println("Invalid operator");
+            }
+        }
+    }
+}
