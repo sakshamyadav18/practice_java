@@ -1,0 +1,12 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter length of Base of Parallelogram: ");
+        float base = input.nextFloat();
+        System.out.print("Enter Height of Parallelogram: ");
+        float height = input.nextFloat();
+        double Area = base*height;
+        System.out.print("Area of the parallelogram is: " + Area);
+    }
+}
