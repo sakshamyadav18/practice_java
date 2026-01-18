@@ -1,0 +1,10 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter length of side of Equilateral traingle: ");
+        float length = input.nextFloat();
+        double Area = (1.732/4)*(Math.pow(length, 2));
+        System.out.print("Area of Equilateral Triangle is: " + Area);
+    }
+}
