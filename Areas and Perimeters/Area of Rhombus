@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+       Scanner input = new Scanner(System.in);
+       System.out.print("Enter length of side of Rhombus: ");
+       float side = input.nextFloat();
+       System.out.print("Enter two adjacent angles: ");
+       double angle1 = input.nextInt();
+       double angle2 = input.nextInt();
+       if((angle1+angle2) == 180){
+           angle1 = Math.toRadians(angle1);
+           angle2 = Math.toRadians(angle2);
+           double diagonal1 = 2*side*Math.cos(angle1/2);
+           double diagonal2 = 2*side*Math.cos(angle2/2);
+           double Area = 0.5*diagonal1*diagonal2;
+           System.out.println("Area of Rhombus is: " + Area);
+       }
+       else{
+           System.out.println("Wrong adjacent angles");
+       }
+    }
+}
