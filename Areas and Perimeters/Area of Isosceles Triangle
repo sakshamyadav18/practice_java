@@ -1,0 +1,12 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter Base of Isosceles Triangle: ");
+        float base = input.nextFloat();
+        System.out.print("Enter Height of Isosceles Triangle: ");
+        float height = input.nextFloat();
+        double Area = 0.5*base*height;
+        System.out.print("Area of Isosceles Triangle is: " + Area);
+    }
+}
