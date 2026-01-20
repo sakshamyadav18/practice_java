@@ -1,0 +1,29 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the Units: ");
+        int Units = input.nextInt();
+        double Bill = 0;
+        if(Units>=0 && Units<=200){
+            Bill = Units*3;
+            System.out.print("Bill is: " + Bill);
+        }
+        else if(Units>200 && Units<=400){
+            Bill = (Units-200)*4.5 + 200*3;
+            System.out.print("Bill is: " + Bill);
+        }
+        else if(Units>400 && Units<=800){
+            Bill = (Units-400)*6.5 + 200*4.5 + 200*3;
+            System.out.print("Bill is: " + Bill);
+        }
+        else if(Units>800 && Units<=1200){
+            Bill = (Units-800)*7 + 400*6.5 + 200*4.5 + 200*3;
+            System.out.print("Bill is: " + Bill);
+        }
+        else{
+            Bill = (Units-1200)*8 + 400*7 + 400*6.5 + 200*4.5 + 200*3;
+            System.out.print("Bill is: " + Bill);
+        }
+    }
+}
