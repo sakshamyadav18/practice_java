@@ -1,0 +1,30 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter Number: ");
+        int num = 0;
+        int rem;
+        int max;
+        int count = 0;
+        int n;
+        do{
+            n = input.nextInt();
+            num = num*10+n;
+        }while(n!=0);
+        int q = num;
+        while(q>0){
+            q=q/10;
+            count++;
+        }
+        max = num%10;
+        for(int i = 1; i<=count; i++){
+            rem = num%10;
+            if(max<rem){
+                max = rem;
+            }
+            num = num/10;
+        }
+        System.out.print("Maximum Number is: " + max);
+    }
+}
