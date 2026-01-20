@@ -1,0 +1,17 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter how many numbers of average you want to take: ");
+        int num = input.nextInt();
+        int n;
+        int sum = 0;
+        System.out.print("Enter numbers: ");
+        for(int i = 1; i<=num; i++){
+            n = input.nextInt();
+            sum = sum + n;
+        }
+        float avg = ((float)sum/num);
+        System.out.print("Average of numbers is: " + avg);
+    }
+}
