@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter Number whose factorial has to be found: ");
+        int n = input.nextInt();
+        long fact = 1;
+        while(n>0){
+            fact = fact*n;
+            n--;
+        }
+        System.out.print("The Factorial of The Number is: " + fact);
+    }
+}
