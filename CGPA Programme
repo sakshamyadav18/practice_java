@@ -1,0 +1,46 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter No. of subjects: ");
+        int Sub = input.nextInt();
+        int Sum = 0;
+        int Tot_Credit = 0;
+        int CGPA;
+        for(int i = 1; i<=Sub; i++){
+            System.out.print("Enter Marks of " + i + " Subject: ");
+            int Mark = input.nextInt();
+            if(Mark>=90){
+                CGPA = 10;
+            }
+            else if(Mark>=75 && Mark<90){
+                CGPA = 9;
+            }
+            else if(Mark>=65 && Mark<75){
+                CGPA = 8;
+            }
+            else if(Mark>=55 && Mark<65){
+                CGPA = 7;
+            }
+            else if(Mark>=50 && Mark<55){
+                CGPA = 6;
+            }
+            else if(Mark>=45 && Mark<50){
+                CGPA = 5;
+            }
+            else if(Mark>=40 && Mark<45){
+                CGPA = 4;
+            }
+            else{
+                CGPA = 0;
+            }
+            System.out.print("Enter Credit of "  + i + " Subject: ");
+            int Credit = input.nextInt();
+            Tot_Credit = Tot_Credit + Credit;
+            int Total = (CGPA*Credit);
+            Sum = Sum+Total;
+        }
+        float Final = (float)Sum/Tot_Credit;
+        System.out.print("CGPA: " + Final);
+    }
+}
