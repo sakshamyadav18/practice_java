@@ -1,0 +1,12 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter Amount of sale happened: ");
+        int Sale = input.nextInt();
+        System.out.print("Enter Commission given: ");
+        int Commission = input.nextInt();
+        float C_perc = ((float)Commission/Sale)*100;
+        System.out.print("Commission % given: " + C_perc);
+    }
+}
