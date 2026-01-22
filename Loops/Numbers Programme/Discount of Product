@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter Rate of Product: ");
+        int Rate = input.nextInt();
+        System.out.print("Enter Discount %: ");
+        int Discount = input.nextInt();
+        float Discounted_Price = Rate*((float)Discount/100);
+        float Final_Rate = Rate-Discounted_Price;
+        System.out.println("Discounted Price is: " + Discounted_Price);
+        System.out.print("Final Rate is: " + Final_Rate);
+    }
+}
