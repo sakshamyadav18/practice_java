@@ -1,0 +1,13 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter Original Value: ");
+        int Ori_Value = input.nextInt();
+        System.out.print("Enter Current Value : ");
+        int Curr_Value = input.nextInt();
+        int Dep_Value = Ori_Value - Curr_Value;
+        float Dep_Perc = ((float)Dep_Value/Ori_Value)*100;
+        System.out.print("Depriciation % is: " + Dep_Perc);
+    }
+}
