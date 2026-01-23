@@ -1,0 +1,30 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter No. of Objects: ");
+        int n = input.nextInt();
+        int a = n;
+        System.out.print("Enter Objects to be Selected: ");
+        int r = input.nextInt();
+        int b = r;
+        int q = (n-r);
+        int P1 = 1;
+        int P2 = 1;
+        int P3 = 1;
+        while(n>0 || q>0 || r>0){
+            P1 = P1*n;
+            n--;
+            if(r>0){
+                P3 = P3*r;
+                r--;
+            }
+            if(q>0){
+                P2 = P2*q;
+                q--;
+            }
+        }
+        int nCr = P1/(P3*P2);
+        System.out.print(a + "C" + b + "is: " + nCr);
+    }
+}
