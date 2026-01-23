@@ -1,0 +1,20 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the String: ");
+        String string = input.next();
+        int count = string.length();
+        String rev = "";
+        for(int i = (count-1); i>=0; i--){
+            char word = string.charAt(i);
+            rev = rev+word;
+        }
+        if(string.equals(rev)){
+            System.out.print("Palindrome");
+        }
+        else{
+            System.out.print("Not Palindrome");
+        }
+    }
+}
