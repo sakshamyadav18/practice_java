@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter two Nos. whose HCF has to be find: ");
+        int n = input.nextInt();
+        int p = input.nextInt();
+        int a = 0;
+        if(n>p){
+            n = n+p;
+            p = n-p;
+            n = n-p;
+        }
+        while(n!=0){
+            a = n;
+            n = p%n;
+            p = a;
+        }
+        System.out.print("The HCF of given two Nos. is: " + a);
+    }
+}
