@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter No. of Inputs: ");
+        int Num = input.nextInt();
+        int Sum = 0;
+        for(int i = 1; i<=Num; i++){
+            System.out.print("Enter " + i + " Number: ");
+            int Value = input.nextInt();
+            Sum = Sum+Value;
+        }
+        System.out.print("Average of " + Num + " Nos. is: " + (float)Sum/Num);
+    }
+}
