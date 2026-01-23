@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter Principal Amount: ");
+        int Amt = input.nextInt();
+        System.out.print("Enter time in years: ");
+        float Time = input.nextFloat();
+        System.out.print("Enter ROI: ");
+        float ROI = input.nextFloat();
+        double Amount = Amt*(Math.pow(1+(ROI/100), Time));
+        System.out.print("Compound Interest is: " + (Amount-Amt));
+    }
+}
