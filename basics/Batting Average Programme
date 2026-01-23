@@ -1,0 +1,12 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter Runs scored by Batsman: ");
+        int Run = input.nextInt();
+        System.out.print("Enter no. of times the Batsman outs: ");
+        int Out = input.nextInt();
+        float Batt_Avg = ((float)Run/Out);
+        System.out.print("Batting Average of Batsman is: " + Batt_Avg);
+    }
+}
