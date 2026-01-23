@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter no. of objects: ");
+        int n = input.nextInt();
+        System.out.print("Enter no. of objects selected: ");
+        int r = input.nextInt();
+        int q = n-r;
+        int P1 = 1;
+        int P2 = 1;
+        while(n>0 || q>0){
+            P1 = P1*n;
+            n--;
+            if(q>0){
+                P2 = P2*q;
+                q--;
+            }
+        }
+        int nPr = P1/P2;
+        System.out.print("nPr is: " + nPr);
+    }
+}
