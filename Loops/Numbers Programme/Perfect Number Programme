@@ -1,0 +1,16 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the Number: ");
+        int Num = input.nextInt();
+        int Sum = 0;
+        for(int i = 1; i<Num; i++){
+            if(Num%i==0){
+               Sum = Sum + i; 
+            }
+        }
+        if(Num==Sum) System.out.print(Num + " is a Perfect No.");
+        else System.out.print(Num + " isn't a Perfect No.");
+    }
+}
