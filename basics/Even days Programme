@@ -1,0 +1,10 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the Month: ");
+        String Month = input.next();
+        if(Month.equals("Feburary")) System.out.print("14 days");
+        else System.out.print("15 days");
+    }
+}
