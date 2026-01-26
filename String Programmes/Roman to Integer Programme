@@ -1,0 +1,35 @@
+class Solution {
+    public int romanToInt(String s) {
+        int Sum = 0;
+        int count = s.length();
+        for(int i = 0; i<=count-1; i++){
+            char Roman = s.charAt(i);
+            if(Roman=='M') Sum = Sum + 1000;
+            else if(Roman=='D') Sum = Sum + 500;
+            else if(Roman=='C'){
+                if(i+1<count){
+                    if(s.charAt(i+1)=='D' || s.charAt(i+1)=='M') Sum = Sum - 100;
+                    else Sum = Sum + 100;
+                }
+                else Sum = Sum + 100;
+            }
+            else if(Roman=='L') Sum = Sum + 50;
+            else if(Roman=='X'){
+                if(i+1<count){
+                    if(s.charAt(i+1)=='L' || s.charAt(i+1)=='C') Sum = Sum - 10;
+                    else Sum = Sum + 10;
+                }
+                else Sum = Sum + 10;
+            }
+            else if(Roman=='V') Sum = Sum + 5;
+            else{
+                if(i+1<count){
+                    if(s.charAt(i+1)=='V' || s.charAt(i+1)=='X') Sum = Sum - 1;
+                    else Sum = Sum + 1;
+                }
+                else Sum = Sum + 1;
+            }
+        }
+        return Sum;
+    }
+}
