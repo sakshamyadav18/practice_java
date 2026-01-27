@@ -41,6 +41,6 @@ public class Main{
             Sum = Sum+Total;
         }
         float Final = (float)Sum/Tot_Credit;
-        System.out.print("CGPA: " + Final);
+        System.out.print("CGPA is: " + Final);
     }
 }
